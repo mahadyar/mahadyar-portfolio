@@ -852,24 +852,19 @@ ul {
 }
 
 .project-preview {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    line-height: 0;
+}
 
-    height: 280px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background:
-
-        radial-gradient(
-            circle,
-            rgba(101, 230, 165, 0.15),
-            transparent 60%
-        ),
-
-        var(--bg-secondary);
+.project-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: -1px;
 }
 
 .project-preview span {
@@ -1513,4 +1508,43 @@ footer {
 
 .profile-card p {
     margin: 0;
+}
+@media (max-width: 600px) {
+
+    .project-preview {
+        height: 180px;
+    }
+
+    .project-preview img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .project-content {
+        padding: 25px;
+    }
+
+    .project-content h3 {
+        font-size: 26px;
+    }
+
+    .project-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .project-tech {
+        gap: 8px;
+    }
+
+    .project-tech span {
+        font-size: 11px;
+        padding: 6px 10px;
+    }
+
+    .project-content .btn {
+        width: 100%;
+        text-align: center;
+    }
 }
