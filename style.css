@@ -865,6 +865,7 @@ ul {
     object-fit: cover;
     display: block;
     margin-bottom: -1px;
+    display:block;
 }
 
 .project-preview span {
